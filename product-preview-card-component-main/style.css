@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.photo {
+  max-width: 100%;
+  /* max-width: 300px; */
+  border-top-left-radius: 10px;
+  border-end-start-radius: 10px;
+  display: block;
+}
+
+.content {
+  display: grid;
+  padding: 3rem;
+}
+
+.category {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  padding-top: 1.2rem;
+}
+
+.main-header {
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  max-width: 20rem;
+  line-height: 1;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.8rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.price {
+  font-size: 3rem;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+
+.old-price {
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  text-decoration: none;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 0.6rem 0;
+  margin-top: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+  background-color: hsl(158, 60%, 13%);
+}
+
+.btn:visited,
+.btn:link {
+  text-decoration: none;
+}
+
+.icon {
+  margin-right: 0.75rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    margin: 2rem;
+  }
+
+  .photo {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+
+  .category {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .main-header {
+    max-width: 30rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .description {
+    margin-bottom: 1.6rem;
+  }
+
+  .btn {
+    padding: 1.6rem;
+  }
+}
